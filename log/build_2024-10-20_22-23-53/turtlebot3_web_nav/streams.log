@@ -1,0 +1,24 @@
+[0.572s] Invoking command in '/home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav': PYTHONPATH=/home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/build --no-deps symlink_data
+[0.749s] running develop
+[0.839s] running egg_info
+[0.839s] creating turtlebot3_web_nav.egg-info
+[0.840s] writing turtlebot3_web_nav.egg-info/PKG-INFO
+[0.840s] writing dependency_links to turtlebot3_web_nav.egg-info/dependency_links.txt
+[0.841s] writing entry points to turtlebot3_web_nav.egg-info/entry_points.txt
+[0.841s] writing requirements to turtlebot3_web_nav.egg-info/requires.txt
+[0.841s] writing top-level names to turtlebot3_web_nav.egg-info/top_level.txt
+[0.841s] writing manifest file 'turtlebot3_web_nav.egg-info/SOURCES.txt'
+[0.842s] reading manifest file 'turtlebot3_web_nav.egg-info/SOURCES.txt'
+[0.842s] writing manifest file 'turtlebot3_web_nav.egg-info/SOURCES.txt'
+[0.843s] running build_ext
+[0.843s] Creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/lib/python3.10/site-packages/turtlebot3-web-nav.egg-link (link to .)
+[0.844s] Installing ros2_bridge script to /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/lib/turtlebot3_web_nav
+[0.844s] 
+[0.844s] Installed /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav
+[0.844s] running symlink_data
+[0.844s] creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index
+[0.844s] creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index/resource_index
+[0.845s] creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index/resource_index/packages
+[0.845s] symbolically linking /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/resource/turtlebot3_web_nav -> /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index/resource_index/packages
+[0.845s] symbolically linking /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/package.xml -> /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/turtlebot3_web_nav
+[0.866s] Invoked command in '/home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav' returned '0': PYTHONPATH=/home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/build --no-deps symlink_data

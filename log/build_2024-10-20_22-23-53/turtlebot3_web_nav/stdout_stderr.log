@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating turtlebot3_web_nav.egg-info
+writing turtlebot3_web_nav.egg-info/PKG-INFO
+writing dependency_links to turtlebot3_web_nav.egg-info/dependency_links.txt
+writing entry points to turtlebot3_web_nav.egg-info/entry_points.txt
+writing requirements to turtlebot3_web_nav.egg-info/requires.txt
+writing top-level names to turtlebot3_web_nav.egg-info/top_level.txt
+writing manifest file 'turtlebot3_web_nav.egg-info/SOURCES.txt'
+reading manifest file 'turtlebot3_web_nav.egg-info/SOURCES.txt'
+writing manifest file 'turtlebot3_web_nav.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/lib/python3.10/site-packages/turtlebot3-web-nav.egg-link (link to .)
+Installing ros2_bridge script to /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/lib/turtlebot3_web_nav
+
+Installed /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav
+running symlink_data
+creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index
+creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index/resource_index
+creating /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/resource/turtlebot3_web_nav -> /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/ament_index/resource_index/packages
+symbolically linking /home/ubuntu/turtlebot3_voice_nav/build/turtlebot3_web_nav/package.xml -> /home/ubuntu/turtlebot3_voice_nav/install/turtlebot3_web_nav/share/turtlebot3_web_nav
