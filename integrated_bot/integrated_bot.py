@@ -31,13 +31,19 @@ async def handle_voice(update: Update, context):
     
     if transcription:
         await update.message.reply_text(f"I heard: {transcription}")
-        response = await run_react_agent(transcription)
-        # Format the response with proper HTML tags
-        formatted_response = response.replace('\n', '\n\n')  # Double newlines for paragraph breaks
-        formatted_response = f"<pre>{formatted_response}</pre>"  # Wrap in pre tags to preserve formatting
-        # Split the response into chunks of 4096 characters or less
-        for i in range(0, len(formatted_response), 4096):
-            await update.message.reply_html(formatted_response[i:i+4096])
+        try:
+            response = await run_react_agent(transcription)
+            if response and response.strip():  # Check if response is non-empty
+                # Split response into smaller chunks if needed
+                chunks = [response[i:i+4000] for i in range(0, len(response), 4000)]
+                for chunk in chunks:
+                    if chunk.strip():  # Only send non-empty chunks
+                        await update.message.reply_text(chunk)
+            else:
+                await update.message.reply_text("I couldn't generate a proper response. Please try again.")
+        except Exception as e:
+            logger.error(f"Error processing request: {str(e)}")
+            await update.message.reply_text("Sorry, there was an error processing your request. Please try again.")
     else:
         await update.message.reply_text("Sorry, there was an error understanding your message. Please try again.")
 
@@ -47,13 +53,19 @@ async def handle_text(update: Update, context):
         context.user_data['welcomed'] = True
 
     user_input = update.message.text
-    response = await run_react_agent(user_input)
-    # Format the response with proper HTML tags
-    formatted_response = response.replace('\n', '\n\n')  # Double newlines for paragraph breaks
-    formatted_response = f"<pre>{formatted_response}</pre>"  # Wrap in pre tags to preserve formatting
-    # Split the response into chunks of 4096 characters or less
-    for i in range(0, len(formatted_response), 4096):
-        await update.message.reply_html(formatted_response[i:i+4096])
+    try:
+        response = await run_react_agent(user_input)
+        if response and response.strip():  # Check if response is non-empty
+            # Split response into smaller chunks if needed
+            chunks = [response[i:i+4000] for i in range(0, len(response), 4000)]
+            for chunk in chunks:
+                if chunk.strip():  # Only send non-empty chunks
+                    await update.message.reply_text(chunk)
+        else:
+            await update.message.reply_text("I couldn't generate a proper response. Please try again.")
+    except Exception as e:
+        logger.error(f"Error processing request: {str(e)}")
+        await update.message.reply_text("Sorry, there was an error processing your request. Please try again.")
 
 def main():
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()

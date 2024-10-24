@@ -1,11 +1,14 @@
 import aiohttp
 import openai
 import os
+from dotenv import load_dotenv
 
-# TELEGRAM_BOT_TOKEN = "TELEGRAM_BOT_TOKEN"
-# OPENAI_API_KEY = "OPENAI_API_KEY"
+# Load environment variables
+load_dotenv()
 
-openai.api_key = os.getenv('OPENAI_API_KEY')
+# Get API key from environment variable
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 async def transcribe_voice(voice_data):
     try:
